@@ -10,5 +10,6 @@
 *.log
 *.out
 *.pdf
-*.gz
+*.synctex
+*.synctex.gz
 *.toc
