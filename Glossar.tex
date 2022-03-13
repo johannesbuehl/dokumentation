@@ -1,76 +1,117 @@
 \newglossaryentry{Lautheit}{
 	name={Lautheit},
-	description={Lautheit ist eine Größe welche die von Menschen empfundene Lautstärke eines Signals abbilden soll. Damit unterscheidet sie sich vom Peak-Wert, welcher den Maximalwert eines Signals angibt. Pegelanzeigen zeigen in der Regeln den \Gls{Peak}-Wert an und eignen sich damit nur bedingt für eine Aussage über die Lautheit.\\Die Lautheit wird meistens in \textit{LU} (\textit{\textbf{L}oudness \textbf{U}nits}) angegeben, häufig auch in Bezug auf den maximal möglichen Wert (\textit{\textbf{F}ull \textbf{S}cale}-Wert): \textit{LUFS}},
+	description={
+		Lautheit ist eine Größe welche die von Menschen empfundene Lautstärke eines Signals abbilden soll. Damit unterscheidet sie sich vom Peak-Wert, welcher den Maximalwert eines Signals angibt. Pegelanzeigen zeigen in der Regeln den \Gls{Peak}-Wert an und eignen sich damit nur bedingt für eine Aussage über die Lautheit.\\Die Lautheit wird meistens in \textit{LU} (\textit{\textbf{L}oudness \textbf{U}nits}) angegeben, häufig auch in Bezug auf den maximal möglichen Wert (\textit{\textbf{F}ull \textbf{S}cale}-Wert): \textit{LUFS}
+	},
 	see={Peak}
 }
 
 \newglossaryentry{Peak}{
 	name={Peak},
-	description={Der Peak-Wert bezeichnet den Spitzenwert eines (Audio)-Signals. Mit dem Peak-Wert lassen sich nur bedingt Aussagen über die Lautheit machen}
+	description={
+		Der Peak-Wert bezeichnet den Spitzenwert eines (Audio)-Signals. Mit dem Peak-Wert lassen sich nur bedingt Aussagen über die Lautheit machen
+	}
 	,see={TruePeak,Lautheit}
 }
 
 \newglossaryentry{TruePeak}{
 	name={True-Peak},
-	description={},
-	see={Peak}
+	description={
+		True Peaks, auch Intersample Peaks genannt, sind Peaks, die bei einer Umwandlung ins Analoge oder in einen anderen (verlustbehafteten) Audiocodec auftreten können.
+		Obwohl die einzelnen Samples eines Signals nicht lauter als \SI{0}{dBFS} werden können, kann der Pegel zwischen den Samples rechnerisch noch weiter ansteigen.
+		Diese Übersteuerungen können dann auftreten, wenn das Signal zurück in ein analoges Signal oder in einen verlustbehafteten Codec umgewandelt wird.
+		Manche Peak-Anzeigen haben einen True Peak-Modus, welcher diese berechnet und anzeigt.\\
+		Um solche True Peaks zu vermeiden, wird meist ein zusätzlicher Headroom von etwa \SI{1}{dBFS} gelassen
+	},
+	see={Peak,Headroom}
+}
+
+\newglossaryentry{Headroom}{
+	name={Headroom},
+	description={
+		Der \textit{Headroom} bezeichnet eine Aussteuerungsreserve, welche in einem Signal übrig ist.
+		Es ist der Unterschied zwischen dem maximalen und dem maximal möglichen Pegel
+	}
+	,see={TruePeak}
 }
 
 \newglossaryentry{VST-Plugin}{
 	name={VST-Plugin},
-	description={VST steht für Virtual Studio Technology und ist eine Programmierschnittstelle für Audio-Plugins}
+	description={
+		VST steht für Virtual Studio Technology und ist eine Programmierschnittstelle für Audio-Plugins
+	}
 }
 
 \newglossaryentry{SDI}{
 	name={SDI},
-	description={SDI, kurz für Serial Digital Interface, ist eine serielle Übertragungsschnittstelle für digitale Videosignale über Koaxialkabel oder Lichtwellenleiter. Es ermöglicht im Gegensatz zu HDMI Kabellängen von bis zu 100 Metern (über Koaxialkabel)}
+	description={
+		SDI, kurz für Serial Digital Interface, ist eine serielle Übertragungsschnittstelle für digitale Videosignale über Koaxialkabel oder Lichtwellenleiter. Es ermöglicht im Gegensatz zu HDMI Kabellängen von bis zu 100 Metern (über Koaxialkabel)
+	}
 }
 
 \newglossaryentry{NDI}{
 	name={NDI},
-	description={NDI, kurz für Network Device Interface, ist eine Spezifikationen zur Übertragung digitaler Videosignale über ein Computernetzwerk}
+	description={
+		NDI, kurz für Network Device Interface, ist eine Spezifikationen zur Übertragung digitaler Videosignale über ein Computernetzwerk
+	}
 }
 
 \newglossaryentry{PTZ-Kamera}{
 	name={PTZ-Kamera},
-	description={Eine PTZ-Kamera ist eine Kamera, deren \textbf{P}an, \textbf{T}ilt und \textbf{Z}oom ferngesteuert werden kann}
+	description={
+		Eine PTZ-Kamera ist eine Kamera, deren \textbf{P}an, \textbf{T}ilt und \textbf{Z}oom ferngesteuert werden kann
+	}
 }
 
 \newglossaryentry{FoH_full}{
 	name={Front of House},
-	description={\textit{Front of House} bezeichnet den Ort, an dem sich bei einer Veranstaltung die Ton-, Video- und Lichttechnik befindet}
+	description={
+		\textit{Front of House} bezeichnet den Ort, an dem sich bei einer Veranstaltung die Ton-, Video- und Lichttechnik befindet
+	}
 }
 
 \newglossaryentry{FoH}{
 	name={FoH},
-	description={Abkürzung für \Gls{FoH_full}},
+	description={
+		Abkürzung für \Gls{FoH_full}
+	},
 	see={FoH_full}
 }
 
 \newglossaryentry{PoE_full}{
 	name={Power over Ethernet},
-	description={Power over Ethernet bezeichnet das Verfahren, elektronische Geräte über das Ethernet-Kabel mit Strom zu versorgen. Dies ermöglicht den Anschluss eines Gerätes ohne zusätzliche Stromversorgung. Dies wird zum Beispiel häufig für WLAN-Access-Points verwendet}
+	description={
+		Power over Ethernet bezeichnet das Verfahren, elektronische Geräte über das Ethernet-Kabel mit Strom zu versorgen. Dies ermöglicht den Anschluss eines Gerätes ohne zusätzliche Stromversorgung. Dies wird zum Beispiel häufig für WLAN-Access-Points verwendet
+	}
 }
 
 \newglossaryentry{PoE}{
 	name={PoE},
-	description={Abkürzung für \Gls{PoE_full}},
+	description={
+		Abkürzung für \Gls{PoE_full}
+	},
 	see={PoE_full}
 }
 
 \newglossaryentry{OBS} {
 	name={OBS},
-	description={Open Broadcaster Software ist eine Videomischsoftware, mit welcher Bild-, Video- und Audiosignale live zusammengesetzt und gemischt werden können}
+	description={
+		Open Broadcaster Software ist eine Videomischsoftware, mit welcher Bild-, Video- und Audiosignale live zusammengesetzt und gemischt werden können
+	}
 }
 
 \newglossaryentry{Visca} {
 	name={Visca},
-	description={Das Visca-Protokoll ist ein von Sony entwickeltets Protokoll, zur Kommunikation mit Videokameras}
+	description={
+		Das Visca-Protokoll ist ein von Sony entwickeltets Protokoll, zur Kommunikation mit Videokameras
+	}
 }
 
 \newglossaryentry{stinger} {
 	name={Stinger-Transition},
-	description={Stinger-Transitions sind eine Möglichkeit in \Gls{OBS}, einen Übergang zwischen zwei Szenen zu gestalten. Hierbei wird eine Videodatei über das eigentliche Bild gelegt und nach einer vorher definierten Zeit zur neuen Szene gewechselt. Durch transparente Anteile in der Videodatei sind weiche Übergänge möglich},
+	description={
+		Stinger-Transitions sind eine Möglichkeit in \Gls{OBS}, einen Übergang zwischen zwei Szenen zu gestalten. Hierbei wird eine Videodatei über das eigentliche Bild gelegt und nach einer vorher definierten Zeit zur neuen Szene gewechselt. Durch transparente Anteile in der Videodatei sind weiche Übergänge möglich
+	},
 	see={OBS}
 }
 
