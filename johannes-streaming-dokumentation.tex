@@ -1,0 +1,90 @@
+\documentclass[11pt, fleqn]{scrreprt}
+
+\usepackage[utf8]{inputenc} %support for german chars
+\usepackage[ngerman]{babel} %support for german chars
+\usepackage{icomma} %for german comma at decimal number
+\usepackage{multicol} %enables text in multiple columns
+% \usepackage{titling} %enables subtitle
+\usepackage{microtype} %final document is better to read
+%\usepackage[onehalfspacing]{setspace} %one-half line spacing
+\usepackage{booktabs} %tools for better tables
+\usepackage[thinlines]{easytable}
+\usepackage[paper=a4paper,top=2cm, bottom=2.5cm, left=2cm, right=2cm]{geometry} %dimensions like word
+\setlength{\parindent}{0pt}
+
+\usepackage{pdflscape}
+
+\usepackage{pgfplots} %plot functions etc
+\usepackage{graphicx} %insert graphics
+\usepackage{url} %make URLs more fancy
+
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{pdfpages} % include pdf pages by \includepdf{}
+
+\usepackage{amsmath} % better math-stuff
+\usepackage{amssymb} % more math symbols
+\usepackage{float}
+
+\usepackage{csvsimple}
+
+\usepackage{ulem}
+\usepackage{cleveref}
+
+\usepackage{csquotes}
+
+\usepackage{pgfplotstable}
+
+\usepackage[acronym,toc]{glossaries}
+\makeglossaries
+
+\usepackage[justification=justified]{caption}
+\usepackage[justification=centering,singlelinecheck=false,labelsep=period]{caption}
+\addto\captionsngerman{\renewcommand{\figurename}{Bild}}
+
+\usepackage{siunitx}
+\sisetup{
+	locale = DE,
+	inter-unit-product = \text{}
+}
+\DeclareSIUnit\bar{bar}
+
+\pgfplotsset{compat=newest}
+
+% \newcommand{\subtitle}[1]{\posttitle{\par\end{center}\begin{center}\large#1\end{center}\vskip0.5em}} %enables subtitle
+
+\widowpenalty
+\clubpenalty
+
+% \titlehead{titlehead}
+\subject{Dokumentation}
+\title{Streaming-Setup in der Johanneskirche Bühl}
+\subtitle{Version 0.1}
+\author{Simon Ziegler}
+\date{Stand \today}
+\publishers{installiert von Jonas Borho \& Simon Ziegler}
+
+\newcommand{\rarrow}{$\rightarrow$ }
+\newcommand{\larrow}{$\leftarrow$ }
+\newcommand{\Rarrow}{$\Rightarrow$ }
+\newcommand{\Larrow}{$\Leftarrow$ }
+
+\KOMAoptions{numbers=noendperiod}
+
+
+\begin{document}
+	\maketitle
+
+	\newpage
+
+	\tableofcontents
+	\newpage
+
+	\input{Kabel}
+	\input{Streamdeck}
+	\input{Software}
+	\input{YouTube}
+	\input{Atem Mini}
+	\input{Kameras}
+	\input{Glossar}
+\end{document}

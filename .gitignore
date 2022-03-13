@@ -1,0 +1,14 @@
+*.acn
+*.acr
+*.alg
+*.aux
+*.glg
+*.glo
+*.gls
+*.glsdefs
+*.ist
+*.log
+*.out
+*.pdf
+*.gz
+*.toc

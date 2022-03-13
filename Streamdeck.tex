@@ -1,0 +1,31 @@
+\chapter{Streamdeck}
+	Das \textit{Elgato Streamdeck} ist eine programmierbare Makrotastatur mit 15 Displaytasten. Mithilfe der zugehörige Software von Elgato kann man eine maßgeschneiderte Makrotastatur erstellen, welche mit vielen Programmen direkt kommunizieren kann.
+
+	Das verbaute Streamdeck wird allerdings mit der drittanbieter Software \textit{Bitfocus Companion} betrieben. Diese bietet ähnliche Funktionen, ist aber eher für Rundfunkanwendungen konzipiert. Es lassen sich ebenfalls viele Programme durch Netzwerkprotokolle direkt einbinden.
+
+	Das Interface bildet 100 aufeinanderfolgende Seiten ab, zwischen denen auf- und abgeblättert oder umhergesprungen werden kann.
+
+	Programmiert sind unter anderem Seiten, um:
+	\begin{itemize}
+		\item Programme zu starten
+		\item Stream und Aufnahme zu starten und beenden
+		\item Szenen in \Gls{OBS} zu wechseln
+		\item PTZ-Presets abzurufen
+		\item Einblendungen zu steuern
+		\item die \Gls{PTZ-Kamera} fernzusteuern
+		\item PTZ-Preset abzuspeichern
+		\item Atem-Mischer fern zu steuern
+	\end{itemize}
+
+	\section{Einrichtung}
+		Die komplette Einrichtung der Companion-Software erfolgt im Browser. Durch einen Klick auf das Symbol im Benachrichtigungsfelder der Taskleiste öffnet sich ein Fenster, mit welchem die Konfigurationsseite im Browser öffnen lässt (\textit{Launch GUI}).
+
+		Dort kann nun sowohl die Belegung der einzelnen Buttons, als auch die Konfiguration der geladenen Modulen angepasst werden.
+
+	\section{Konfiguration}
+		\subsection{PTZ}
+			Companion ermöglicht eine direkte Steuerung der \Gls{PTZ-Kamera} über das \textit{\Gls{Visca}-Protokoll}. Die Buttons, welche die verschiedenen PTZ-Presets abrufen, haben zwei Befehle hinterlegt:
+			\begin{enumerate}
+				\item PTZ-Preset abrufen: Dies sendet einen \Gls{Visca}-Befehl an die Kamera, um das entsprechende Preset anzufahren.
+				\item Szenen-Wechsel in \Gls{OBS}: In \Gls{OBS} zu der Szene wechseln, welche dem Preset entspricht. Hierdurch wird die \Gls{stinger} ausgelöst.
+			\end{enumerate}

@@ -1,0 +1,33 @@
+\chapter{Verkabelung}
+	\section{SDI}
+		Alle Videostrecken wurden mit \Gls{SDI}-Koaxial-Kabeln durchgeführt, da die einige der Strecken zu lang für eine zuverlässige HDMI-Verbindung sind. Im Computer ist hierfür eine \textit{Blackmagic Design DeckLink Duo 2} verbaut. Diese bietet 4 Bidirektionale 3G-\Gls{SDI}-Anschlüsse und einen Sync-Eingang; dieser wird allerdings nicht benutzt.
+
+		Es sind folgende Kabelstrecken installiert:
+		\begin{table}[h]
+			\caption{Belegung der \Gls{SDI}-Capture-Karte \textit{Blackmagic Design DeckLink Duo 2}}
+			\centering
+			
+			\begin{tabular}{ccl}
+				\toprule
+				Anschluss & Konfiguration & Bezeichnung \\
+				\midrule
+				Sync & - & nicht verwendet \\
+				1 & Eingang & \Gls{PTZ-Kamera} \\
+				2 & Eingang & Leitung Altarraum \\
+				3 & Eingang & Patchfeld \Gls{FoH} \\
+				4 & Ausgang & Beamer Gemeindesaal \\
+				\bottomrule
+			\end{tabular}
+		\end{table}
+
+		Die PTZ-Kamera ist fest angeschlossen, ebenso der Beamer. Die Leitung in den Altarraum endet hinter dem Leimbinder am Flügel wo noch einige restliche Meter Kabel aufgewickelt sind. Der dritte Anschluss ist an das Patchfeld im Rack angeschlossen. Diese beiden freien Leitungen sind für weitere Videoquellen gedacht, die bedarfsorientiert genutzt werden können. Hierzu gibt es auch noch ein weiteres, loses \Gls{SDI}-Kabel und Verbinder umd bestehende Kabel zu verlängern.
+
+	\section{Netzwerk}
+		Das \Gls{FoH} ist über einen einzelne Gigabit Leitung an das Netzwerk und somit auch an das Internet angeschlossen. Der Haupt-Switch befindet sich unter der Treppe im Kindergarten. Von hieraus liegen 4 Leitungen auf die Bühne in die Theke des Jugendcafes. An einen dieser Ports ist ein weiteres Kabel angeschlossen, welches auf den Speicher und dann entlang der wandseitigen Lampen im Gemeindesaal führt bis in das Rack. Dort befindet sich ein 8-Fach Switch, welcher die verschiedenen Geräten verbindet.
+
+		Da der Haupt-Switch \Gls{PoE} zur Verfügung stellt, ist keine zusätzliche Stromversorgung des Technik-Switches notwendig. Ebenfalls wird innerhalb der beiden vierer Gruppen \Gls{PoE} weitergeleitet. Ebenfalls wird die \Gls{PTZ-Kamera} über \Gls{PoE} mit Strom versorgt.
+
+		Desweiteren ist der Streamingrechner an den Switch angeschlossen.
+
+	\section{Tontechnik}
+		
