@@ -18,7 +18,11 @@
 \usepackage{graphicx} %insert graphics
 \usepackage{url} %make URLs more fancy
 
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+	hidelinks,
+	frenchlinks=true
+}
 
 \usepackage{pdfpages} % include pdf pages by \includepdf{}
 
@@ -36,6 +40,7 @@
 \usepackage{pgfplotstable}
 
 \usepackage[acronym,toc]{glossaries}
+\setacronymstyle{long-sc-short}
 \makeglossaries
 
 \usepackage[justification=justified]{caption}
@@ -76,6 +81,8 @@
 
 
 \begin{document}
+	\input{Glossar}
+
 	\maketitle
 
 	\newpage
@@ -89,5 +96,7 @@
 	\input{YouTube}
 	\input{Atem Mini}
 	\input{Kameras}
-	\input{Glossar}
+
+	\setglossarystyle{altlist}
+	\printglossary
 \end{document}
