@@ -2,10 +2,10 @@
 	\section{PTZ}
 		\subsection{Stromversorgung}
 
-		\subsection{Parposition}
+		\subsection{Parkposition}\label{cam:ptz:park}
 			Damit sich während der Nichtbenutzung der Kamera möglichst wenig Staub auf der Linse ablagert, fährt die Kamera beim Schließen von OBS eine Parkposition an, in welcher sie senkrecht nach unten schaut.
 
-			Hierzu ist im \Gls{OBS}-Plugin \nameref{obs:config:ass} ein Makro hinterlegt, welches beim Schließen von OBS ausgeführt wird.
+			Hierzu ist im \Gls{OBS}-Plugin ein Makro hinterlegt, welches beim Schließen von OBS ausgeführt wird.
 			Es wird eine Exe ausgeführt, welche einen \Gls{Visca}-Befehl an die \Gls{PTZ-Kamera} sendet.
 
 			Das Programm ist ein Python-Skript, welches als Standalaone-Exe kompiliert wurde.
