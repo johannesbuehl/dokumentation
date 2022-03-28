@@ -46,13 +46,13 @@
 				Der Ablauf des Intros wird durch \nameref{obs:plugins:ass}-Makros automatisiert.
 				Es muss lediglich wenn die Kirchenglocken ausgeschalten werden zu der Szene \textit{Intro} gewechselt werden.
 
-				Mit dem Start des Streams wird zur Szene \textit{Glockenläuten} gewechselt.
+				Mit dem Start des Streams wird zur Szene \textit{Glocken} gewechselt.
 				Diese zeigt die Powerpoint, spielt ein Glockenläuten ab und mutet den Mischpultton.
 				Mit dem Ausschalten der (echten) Glocken wird auf die Szene \textit{Intro} gewechselt.
 				Dadurch wird das Intro-Video abgespielt und spielt ein ausklingendes Glockenläuten ab.
 				Nach dessen Ende wird wieder zur PowerPoint zurückgeschalten und der Mischpultton wieder entmutet.
 				
-				\begin{table}
+				\begin{table}[H]
 					\caption{Die Szenen für die Introsequenz}
 					\centering
 
@@ -60,13 +60,13 @@
 						\toprule
 						\multicolumn{1}{c}{Szene} & Quelle & Quellentyp \\
 						\midrule
-						\textit{Glockenläuten} & \parbox{0.3\textwidth}{PowerPoint\\Glockenläuten-Start.wav\\Glockenläuten-Loop.wav} & \parbox{0.2\textwidth}{Szene\\Medienquelle\\Medienquelle} \\ \midrule
+						\textit{Glocken} & \parbox{0.3\textwidth}{PowerPoint\\Glockenläuten-Start.wav\\Glockenläuten-Loop.wav} & \parbox{0.2\textwidth}{Szene\\Medienquelle\\Medienquelle} \\ \midrule
 						\textit{Intro} & \parbox{0.3\textwidth}{Intro.mp4\\Glockenläuten-Ende.wav} & \parbox{0.2\textwidth}{Medienquelle\\Medienquelle} \\
 						\bottomrule
 					\end{tabular}
 				\end{table}
 
-				\begin{table}
+				\begin{table}[H]
 					\caption{Die Makros für die Intro-Automatisierung}
 					\centering
 
@@ -75,12 +75,12 @@
 						\multicolumn{1}{c}{Name} & \multicolumn{1}{c}{Bedingung} & \multicolumn{1}{c}{Aktionen} \\
 						\midrule
 						\textit{on\_stream\_start} & Streaming gestartet & \parbox{0.5\textwidth}{
-								Zu Szene \texttt{Glocken\-läuten} wechseln\\
-								Medienquelle \texttt{Glocken\-läuten\--Start.wav} starten\\
-								Mikrofon (Mischpult-Ton) entmuten
+								Zu Szene \texttt{Glocken} wechseln\\
+								Medienquelle \texttt{Glocken\-läuten-Start.wav} starten\\
+								Mikrofon (Mischpult-Ton) muten
 						} \\ \midrule
-						\textit{glocke\_intro\_to\_loop} & \parbox{0.25\textwidth}{\texttt{Glocken\-läuten\--Start.wav} ist $t_R = \SI{0,3}{\second}$ vor Ende} & \parbox{0.5\textwidth}{Medienquelle \texttt{Glocken\-läuten\--Loop.wav} starten} \\ \midrule
-						\textit{stop\_glocke\_on\_intro} & Aktive Szene ist \texttt{Intro} & \parbox{0.5\textwidth}{Medienquelle \texttt{Glocken\-läuten\--Loop.wav} stoppen} \\ \midrule
+						\textit{glocke\_intro\_to\_loop} & \parbox{0.25\textwidth}{\texttt{Glocken\-läuten-Start.wav} ist $t_R = \SI{0,3}{\second}$ vor Ende} & \parbox{0.5\textwidth}{Medienquelle \texttt{Glocken\-läuten-Loop.wav} starten} \\ \midrule
+						\textit{stop\_glocke\_on\_intro} & Aktive Szene ist \texttt{Intro} & \parbox{0.5\textwidth}{Medienquelle \texttt{Glocken\-läuten-Loop.wav} stoppen} \\ \midrule
 						\textit{switch\_to\_PP\_after\_intro} & \parbox{0.25\textwidth}{Medienquelle \texttt{Intro.mp4} ist zu Ende} & \parbox{0.5\textwidth}{
 							Zu Szene \texttt{PowerPoint} wechseln\\
 							Mikrofon (Mischpult-Ton) entmuten
