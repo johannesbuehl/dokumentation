@@ -1,4 +1,4 @@
-\chapter{Verkabelung}
+\chapter{Verkabelung \& Routing}
 	\section{SDI}
 		Alle Videostrecken wurden mit \Gls{SDI}-Koaxial-Kabeln durchgeführt, da die einige der Strecken zu lang für eine zuverlässige HDMI-Verbindung sind.
 		Im Computer ist hierfür eine \textit{Blackmagic Design DeckLink Duo 2} verbaut.
@@ -26,7 +26,7 @@
 		Die Leitung in den Altarraum endet hinter dem Leimbinder am Flügel wo noch einige restliche Meter Kabel aufgewickelt sind.
 		Der dritte Anschluss ist an das Patchfeld im Rack angeschlossen.
 		Diese beiden freien Leitungen sind für weitere Videoquellen gedacht, die bedarfsorientiert genutzt werden können.
-		Hierzu gibt es auch noch ein weiteres, loses \Gls{SDI}-Kabel und Verbinder umd bestehende Kabel zu verlängern.
+		Hierzu gibt es auch noch ein weiteres, loses \Gls{SDI}-Kabel und Verbinder um bestehende Kabel zu verlängern.
 
 	\section{Netzwerk}
 		Das \Gls{FoH} ist über einen einzelne Gigabit Leitung an das Netzwerk und somit auch an das Internet angeschlossen.
@@ -41,9 +41,55 @@
 
 		Desweiteren ist der Streamingrechner an den Switch angeschlossen.
 
+		\subsection{Netzwerkkabel in Altarraum}
+			Es führt ein weiteres, ungenutztes Netzwerkkabel in den Altarraum.
+			Sie endet hinter dem Leimbinder neben dem Flügel, wo auch der Rest des Kabels aufgerollt ist.
+			Diese Leitung ist für ein digitales \Gls{Multicore} gedacht (Siehe auch \nameref{kabel:ton:digitales_multicore}).
+			
+			Die meisten digitalen \Gls{Multicore}-Protokolle (z.B. \Gls{MADI}, \Gls{AES50}, SLink) sind jedoch \underline{KEINE} Netzwerkprotokolle sondern Punkt-zu-Punkt-Verbindungen welche nur die hohen Datenraten von Netwerkkabeln ausnutzen. (Ausnahme: \Gls{DANTE}, AVB)
 	\section{Tontechnik}
-		Die Verkabelung hat zwei Ebenene: Durch physikalische Kabel in der Kirche und virtuelle \Glsplural{Patch} im Mischpult.
+		Das \Gls{Routing} findet sowohl im analogen als auch im digitalen Bereich statt.
 		\subsection{Kirche}
+			Die Verkabelung in der Kirche kann in mehrere Teile unterteilt werden:
+			\subsubsection{Multicore von Altarraum zu Mischpult}
+				Vom \Gls{FoH} aus führt ein 16-kanäliges \Gls{Multicore} in den Altarraum.
+				Davon sind die ersten 10 Kanäle als Eingänge und die restlichen 4 als Ausgänge ausgeführt.
+
+				Es wird genutzt für:
+				\begin{itemize}
+					\item Altarmikrofon
+					\item Kanzelmikrofon
+					\item Raummikrofone
+					\item \nameref{kabel:ton:multicore_altarraum}
+				\end{itemize}
+			\subsubsection{Multicore im Altarrum}\label{kabel:ton:multicore_altarraum}
+				Im Altarraum liegt ein 12 kanäliges Multicore mit einer Kabeltrommel.
+				Davon sind die ersten 10 Kanäle als Eingänge und die restlichen 2 als Ausgänge ausgeführt.
+
+				Es wird genutzt für:
+				\begin{itemize}
+					\item Flügel-Mikrofone
+					\item \glsplural{Monitor}
+				\end{itemize}
+
+				Die freien Kanäle können für weitere, nicht dauerhaft aufgebaute Mikrofone verwendet werden (z.B. Gesang oder Instrumente).
+				Sie sind bis ins Mischpult gepatcht und sind auf mehreren Kanälen bereits eingerichtet.
+			\subsubsection{Multicore von Rack in Metallschrank}
+				Ein weiteres, kurzes Multicore verläuft zwischen dem Rack und dem Metallschrank, in welchem sich die Endstufen befinden.
+				Es verbindet den \Gls{Lautsprechercontroller} mit den drei \Glsplural{Endstufe} und verlängert die Kabel von der Empore in das Rack.
+			\subsubsection{Empore in Metallschrank}
+				Von der Empore führen zwei Mikrofonkable in den Metallschrank.
+				Auf dem ersten Kanal befindet sich das Orgelmikrofon, der zweite ist unbelegt und endet auf der Rückseite des Lichtschalters am Leimbinder neben der Orgel.
+			\subsubsection{Digitales Multicore in Altarraum}\label{kabel:ton:digitales_multicore}
 		\subsection{Rack}
-		\subsection{Virtuell}
+				Zwischen Rack und Mischpult und auch innerhalb des Mischpults sind weitere Verkabelungen.
+				Die Verbindungen zum Mischpult sind mit Einzelkabeln ausgeführt und sind:
+				\begin{itemize}
+					\item 3 Funkempfänger
+					\item CD-Spieler (Stereo)
+					\item Lautsprecher-Controller (Stereo)
+					\item USB zum Streaming-Rechner
+					\item Stromversorgung des Mischpults
+				\end{itemize}
+		\subsection{Digital}
 		

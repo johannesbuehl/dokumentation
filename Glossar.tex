@@ -1,17 +1,178 @@
+\newglossaryentry{Endstufe}{
+	name={Endstufe},
+	plural={Endstufen},
+	description={
+		Eine \textit{Endstufe} verstärkt ein Line-Signal von einem Mischpult auf ein höhere Leistung, sodass damit Lautsprecher angetrieben werden können
+	}
+	% ,see={}
+}
+
+\newglossaryentry{MADI}{
+	name={MADI},
+	% plural={},
+	description={
+		\textit{MADI}, als AES10 genormt, ist ein digitales Protokoll zur mehrkanaligen Audioübertragung welches häufig für digitale Stageboxen verwendet wird.
+		Es wird für gewöhnlich über Ethernet- oder Glasfaserkabel, manchmal auch über Koaxialkabel übertragen.
+		Allerdings ist MADI \underline{KEIN} Netzwerkprotokoll sondern eine Punkt-zu-Punkt-Verbindung.
+		Es wird lediglich die hohen Datenraten von Netzwerkkabeln ausgenutzt.
+		\\MADI wird von mehreren Herstellern verwendet; bei Soundcraft ist es das "`Standard Protokoll"'.
+		\\MADI selbst ist zwar standardisiert, allerdings ist die Steuerung von Preamps oder Phantomspeißung proprietär und funktionert für gewöhnlich nur innerhalb des Ökosystem eines Herstellers
+	}
+	,see={digitale Stagebox,AES50,DANTE}
+}
+
+\newglossaryentry{digitale Stagebox}{
+	name={digitale Stagebox},
+	% plural={},
+	description={
+		Eine \textit{digitale Stagebox} erfüllt die gleiche Funktion wie eine "`reguläre'' Stagebox.
+		Der Unterschied besteht darin, dass die Signale von der Stagebox zum Mischpult digital übertragen werden.
+		Daher befinden sich in der Stagebox selbst bereits Vorverstärker und AD-Wandler.
+		\\Der Vorteil besteht darin, dass nur ein einzelnes Netzwerk-, Glasfaser- oder Koaxialkabel zum Mischpult verlegt werden muss.
+		Meist kann allerdings optional für Redundanzzwecke oder einen Signalsplit an ein zweites Mischpult ein zweites Kabel angeschlossen werden.
+		Allerdings ist nun ein extra Stromanschluss für die Stagebox erforderlich
+	}
+	,see={Stagebox,AD-Wandler,Preamp}
+}
+
+\newglossaryentry{AD-Wandler}{
+	name={AD-Wandler},
+	% plural={},
+	description={
+		\textit{AD-Wandler} steht für \textit{Analog-Digital-Wandler} und ist ein Bauteil, welches analoge Signale (zum Beispiel von einem Mikrofon) in ein digitales Signal wandeln.
+		Dadurch ist eine Verarbeitung des Signals in der digitalen Domäne möglich.
+		\\Das Gegenstück wird dementsprechend \textit{DA-Wandler genannt}.
+		\\In der (digitalen) Tontechnik befinden sich AD-Wandler in den Eingängen am Mischpult und digitalen Stageboxen. DA-Wandler können sich ebenfalls in Mischpult und Stagebox befinden.
+		Es ist aber auch üblich, das Ausgangssignal digital an Lautsprechercontroller oder Endstufen zu schicken, da diese häufig für die weitere Signalverarbeitung sowieso digital arbeiten
+	}
+	,see={digitale Stagebox,Lautsprechercontroller}
+}
+
+\newglossaryentry{Lautsprechercontroller}{
+	name={Lautsprechercontroller},
+	% plural={},
+	description={
+		Ein Lautsprechercontroller ist ein einzelnes Gerät, welches ein (oder mehrere) Tonsignale Lautsprecherspezifisch bearbeitet.
+		Die Funktionen können umfassen:
+		\begin{multicols*}{2}
+			\begin{itemize}
+				\item Verzögern der Signale, um Laufzeitverzögerungen des Schalls im Raum auszugleichen
+				\item Equalizing der Signale, um Eigenheiten der Lautsprecher und/oder des Raumes auszugleichen
+				\item Limitierung und Kompression der Signale
+				\item automatische Feedback-Unterdrückung
+			\end{itemize}
+		\end{multicols*}
+	}
+	,see={Feedback}
+}
+
+\newglossaryentry{Feedback}{
+	name={Feedback},
+	% plural={},
+	description={
+		\textit{Feedback}, auch \textit{Rückkopplung} genannt, bezeichnet die Rückführung eines Ausgangssignals auf den Eingang.
+		In der Tontechnik ist mit Feedback eine ungewollte Signalschleife von Mikrofon und Lautsprecher gemeint.
+		Dabei schwingt sich das Signal immer weiter auf bis es zu einem unangenehmen, lauten (und meist hohen) Pfeifton kommt.
+		\\Es gibt auch ein "`Feedback-Light"', bei welchem sich die Rückkopplung nicht aufschwingt aber mitklingt und somit die Verständlichkeit stört.
+		Hierbei ist das erneut vom Mikrofon aufgenommene Signal leiser als das ursprüngliche Signal, aber dennoch laut genug, um eine hörbare Kopplung zu erzeugen.
+	}
+	% ,see={}
+}
+
+\newglossaryentry{Preamp}{
+	name={Preamp},
+	% plural={},
+	description={
+		Ein \textit{Preamp}, auf deutsch \textit{Vorverstärker} ist eine elektronische Schaltung, welche ein Signal mit niedriger Spannung (= niedrige Lautstärke) auf eine höhere Spannung verstärkt. Diese Verstärkung wird in Dezibel (dB) angegeben.
+		Hierbei wird nicht nur das Signal, sonder zwangsweise immer auch Hintergrundgeräusche und -rauschen mitverstärkt.
+		Zusätzlich zu dem Signalrauschen haben einige Preamps bei hohen Verstärkungen ein hörbares Eigenrauschen.
+		\\In der Tontechnik werden Preamps benötigt, um die niedrigen Ausgangspegel von Mikrofonen und Instrumenten auf ein Level zu bringen, das eine Weiterverarbeitung ermöglicht.
+	}
+	% ,see={}
+}
+
+\newglossaryentry{Stagebox}{
+	name={Stagebox},
+	% plural={},
+	description={
+		Eine \textit{Stagebox} ist ein Verteilerkasten auf der Bühne (englisch \textit{Stage}) für Mikrofone.
+		Diese bündeln mehrere Signalleitungen und verbinden sie mit dem Mischpult.
+		Dabei können sowohl Eingänge (für Mikrofone etc.) als auch Ausgänge (für Monitore etc.) in einer Stagebox vorhanden sein.
+		Es gibt sowohl fest verbaute als auch mobile Versionen.
+		\\Es gibt sowohl analoge als auch digitale Stageboxen, wobei die analogen lediglich ein Verlängerungskabel sind
+	}
+	,see={digitale Stagebox}
+}
+
+\newglossaryentry{AES50}{
+	name={AES50},
+	% plural={},
+	description={
+		\textit{AES50} ist ein digitales Protokoll zur mehrkanaligen Audioübertragung ähnlich zu MADI.
+		Allerdings sind beide Protokolle \underline{NICHT} kompatibel.
+		\\AES50 wird hauptsächlich von Geräten aus der Unternehmensgruppe Music Tribe, zu der unter anderem Behringer und Midas gehören, verwendet
+	}
+	,see={MADI}
+}
+
+\newglossaryentry{DANTE}{
+	name={DANTE},
+	% plural={},
+	description={
+		\textit{DANTE} ist ein digitales Protokoll zur mehrkanaligen Audioübertragung.
+		Im Gegensatz zu MADI oder AES50 ist es ein Netzwerkprotokoll.
+		Das heißt, es kann über normale Netzwerktechnik geroutet werden.
+		\\Dante wird häufig bei größeren Installationen und Produktionen herstellerübergreifend eingesetzt.
+		Genauso wie bei MADI sind die Steuerung von Preamps und der Phantomspeißung proprietär und für funktioneren für gewöhhnlich nur innerhalb des Öko-Systems
+	}
+	,see={MADI,AES50}
+}
+
 \newglossaryentry{Patch}{
 	name={Patch},
 	plural={Patches},
 	description={
-		foobar.
+		Bezeichnet eine Steckverbindung im Signalpfad.
+		Relevant ist hierbei der Datenfluss, von welchem Element zu welchem Element das Signal fließt.
+		Im analogen Bereich ist das in der Regel eine Kabelverbindung; in der digitalen Domäne können Signale in der Regel durch Zuweisungen gepatcht werden.
 	}
+}
+
+\newglossaryentry{Monitor}{
+	name={Monitor},
+	plural={Monitore},
+	description={
+		Ein Monitor bezeichnet in der Tontechnik einen Lautsprecher, der zu den Akteuren (meist Musiker) gerichtet ist, damit sie sich selbst hören können.
+		In der Regel liegt auf den Monitoren eine andere Abmischung als auf den Publikumslautsprechern.
+		Mit unter hat sogar jeder Musiker einen eigenen Monitor mit einem eigenen Mix
+	}
+	% ,see={}
+}
+
+\newglossaryentry{Routing}{
+	name={Routing},
+	description={
+		Bezeichnet den Fluss von Signalen
+	}
+	,see={Patch}
+}
+
+\newglossaryentry{Multicore}{
+	name={Multicore},
+	description={
+		Ein Kabel, in dem mehrere einzelne Kanäle zusammengefasst werden.
+		Dadurch kann eine große Anzahl an Signalen durch ein einzelnes Kabel übertragen werden.
+	}
+	% ,see={},
 }
 
 \newglossaryentry{Lautheit}{
 	name={Lautheit},
 	description={
-		Lautheit ist eine Größe welche die von Menschen empfundene Lautstärke eines Signals abbilden soll.
+		\textit{Lautheit} ist eine Größe welche die von Menschen empfundene Lautstärke eines Signals abbilden soll.
 		Damit unterscheidet sie sich vom Peak-Wert, welcher den Maximalwert eines Signals angibt.
-		Pegelanzeigen zeigen in der Regeln den \Gls{Peak}-Wert an und eignen sich damit nur bedingt für eine Aussage über die Lautheit.\\Die Lautheit wird meistens in \textit{LU} (\textit{\textbf{L}oudness \textbf{U}nits}) angegeben, häufig auch in Bezug auf den maximal möglichen Wert (\textit{\textbf{F}ull \textbf{S}cale}-Wert): \textit{LUFS}
+		Pegelanzeigen zeigen in der Regeln den \Gls{Peak}-Wert an und eignen sich damit nur bedingt für eine Aussage über die Lautheit.\\
+		Die Lautheit wird meistens in \textit{LU} (\textit{\textbf{L}oudness \textbf{U}nits}) angegeben, häufig auch in Bezug auf den maximal möglichen Wert (\textit{\textbf{F}ull \textbf{S}cale}-Wert): \textit{LUFS}
 	},
 	see={Peak}
 }
