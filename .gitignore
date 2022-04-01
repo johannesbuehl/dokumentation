@@ -15,3 +15,5 @@
 *.toc
 *.fls
 *.fdb_latexmk
+*.hst
+*.ver
