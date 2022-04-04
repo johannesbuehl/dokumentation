@@ -55,6 +55,11 @@
 
 % \newcommand{\subtitle}[1]{\posttitle{\par\end{center}\begin{center}\large#1\end{center}\vskip0.5em}} %enables subtitle
 
+\newcommand{\rarrow}{$\rightarrow$ }
+\newcommand{\larrow}{$\leftarrow$ }
+\newcommand{\Rarrow}{$\Rightarrow$ }
+\newcommand{\Larrow}{$\Leftarrow$ }
+
 \widowpenalty
 \clubpenalty
 
@@ -66,16 +71,29 @@
 \date{Stand \vhCurrentDate}
 \publishers{installiert von Jonas Borho \& Simon Ziegler}
 
-\newcommand{\rarrow}{$\rightarrow$ }
-\newcommand{\larrow}{$\leftarrow$ }
-\newcommand{\Rarrow}{$\Rightarrow$ }
-\newcommand{\Larrow}{$\Leftarrow$ }
+% header and footer
+\usepackage[
+	automark,
+	headsepline=.4pt,
+	plainheadsepline,
+	footsepline=.4pt,
+	plainfootsepline
+]{scrlayer-scrpage}
+
+\clearpairofpagestyles %\clearscrheadfoot veraltet
+
+% \renewcommand*{\chaptermarkformat}{\thechapter\autodot\enskip}
+\chead*{\headmark}
+\lofoot*{Version \vhCurrentVersion}
+\refoot*{Version \vhCurrentVersion}
+\rofoot*{\pagemark}
+\lefoot*{\pagemark}
+\setkomafont{pageheadfoot}{\normalfont}
 
 % \let\origGls\Gls
 % \renewcommand{\Gls}[1]{\rarrow\origGls{#1}}
 
 \KOMAoptions{numbers=noendperiod}
-
 
 \begin{document}
 	\maketitle
