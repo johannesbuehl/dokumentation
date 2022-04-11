@@ -37,7 +37,7 @@
 
 \usepackage{pgfplotstable}
 
-\usepackage[acronym,toc]{glossaries}
+\usepackage[acronym,toc,nopostdot,numberedsection={nolabel}]{glossaries}
 \makeglossaries
 
 \usepackage[justification=justified]{caption}
@@ -71,7 +71,9 @@
 \newcommand{\Rarrow}{$\Rightarrow$ }
 \newcommand{\Larrow}{$\Leftarrow$ }
 
-\newcommand{\tableref}[1]{Tabelle \ref{#1} \textit{\nameref{#1}}}
+\newcommand{\secref}[1]{\hyperref[#1]{\ref*{#1} \textit{\nameref*{#1}}}}
+\newcommand{\tableref}[1]{\hyperref[#1]{Tabelle \ref*{#1} \textit{\nameref*{#1}}}}
+\newcommand{\figref}[1]{\hyperref[#1]{Bild \ref*{#1} \textit{\nameref*{#1}}}}
 
 % \let\origGls\Gls
 % \renewcommand{\Gls}[1]{\rarrow\origGls{#1}}
@@ -100,5 +102,8 @@
 	\input{Kameras}
 	\input{Grundlagen-Video}
 
+	\appendix
+
 	\input{Glossar}
+	\input{Abbildungen}
 \end{document}
