@@ -4,9 +4,10 @@
 		Im Computer ist hierfür eine \textit{Blackmagic Design DeckLink Duo 2} verbaut.
 		Diese bietet 4 Bidirektionale 3G-\Gls{SDI}-Anschlüsse und einen Sync-Eingang; dieser wird allerdings nicht benutzt.
 
-		Es sind folgende Kabelstrecken installiert:
+		Die Kabelstrecken sind entsprechend der \tableref{table:kabel:sdi:decklink}
 		\begin{table}[h]
 			\caption{Belegung der \Gls{SDI}-Capture-Karte \textit{Blackmagic Design DeckLink Duo 2}}
+			\label{table:kabel:sdi:decklink}
 			\centering
 			
 			\begin{tabular}{ccl}
@@ -44,7 +45,7 @@
 		\subsection{Netzwerkkabel in Altarraum}
 			Es führt ein weiteres, ungenutztes Netzwerkkabel in den Altarraum.
 			Sie endet hinter dem Leimbinder neben dem Flügel, wo auch der Rest des Kabels aufgerollt ist.
-			Diese Leitung ist für ein digitales \Gls{Multicore} gedacht (Siehe auch \nameref{kabel:ton:digitales_multicore}).
+			Diese Leitung ist für ein digitales \Gls{Multicore} gedacht (Siehe auch \nameref{ssec:kabel:ton:digitales_multicore}).
 			
 			Die meisten digitalen \Gls{Multicore}-Protokolle (z.B. \Gls{MADI}, \Gls{AES50}, SLink) sind jedoch \underline{KEINE} Netzwerkprotokolle sondern Punkt-zu-Punkt-Verbindungen welche nur die hohen Datenraten von Netwerkkabeln ausnutzen. (Ausnahme: \Gls{DANTE}, AVB)
 	\section{Tontechnik}
@@ -60,9 +61,9 @@
 					\item Altarmikrofon
 					\item Kanzelmikrofon
 					\item Raummikrofone
-					\item \nameref{kabel:ton:multicore_altarraum}
+					\item \nameref{ssec:kabel:ton:multicore_altarraum}
 				\end{itemize}
-			\subsubsection{Multicore im Altarrum}\label{kabel:ton:multicore_altarraum}
+			\subsubsection{Multicore im Altarrum}\label{ssec:kabel:ton:multicore_altarraum}
 				Im Altarraum liegt ein 12 kanäliges Multicore mit einer Kabeltrommel.
 				Davon sind die ersten 10 Kanäle als Eingänge und die restlichen 2 als Ausgänge ausgeführt.
 
@@ -80,7 +81,7 @@
 			\subsubsection{Empore in Metallschrank}
 				Von der Empore führen zwei Mikrofonkable in den Metallschrank.
 				Auf dem ersten Kanal befindet sich das Orgelmikrofon, der zweite ist unbelegt und endet auf der Rückseite des Lichtschalters am Leimbinder neben der Orgel.
-			\subsubsection{Digitales Multicore in Altarraum}\label{kabel:ton:digitales_multicore}
+			\subsubsection{Digitales Multicore in Altarraum}\label{ssec:kabel:ton:digitales_multicore}
 				Es liegt ein unbenutztes Netzwerkkabel vom \Gls{FoH} zum Leimbinder neben dem Flügel.
 				Gedacht ist es für ein \Gls{digitales Multicore}, welches für vereinzelte Veranstaltungen von Extern mitgebracht wird oder einen eventuellen, zukünftigen Kauf.
 		\subsection{Rack}

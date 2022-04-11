@@ -5,3 +5,4 @@
 - Mikrofone
 	- Mikrofonierung
 	- Phantomspeißung
+- Grundlagen Tontechnik
