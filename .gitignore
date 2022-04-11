@@ -1,3 +1,5 @@
+/*.pdf
+
 *.acn
 *.acr
 *.alg
@@ -9,9 +11,10 @@
 *.ist
 *.log
 *.out
-*.pdf
 *.synctex(busy)
 *.synctex.gz
 *.toc
 *.fls
 *.fdb_latexmk
+*.ver
+*.hst
