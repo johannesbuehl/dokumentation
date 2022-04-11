@@ -12,3 +12,5 @@
 *.pdf
 *.gz
 *.toc
+*.ver
+*.hst
