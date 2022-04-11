@@ -30,6 +30,8 @@
 \usepackage{amssymb} % more math symbols
 \usepackage{float}
 
+\usepackage{vhistory}
+
 \usepackage{csvsimple}
 
 \usepackage{ulem}
@@ -64,9 +66,9 @@
 % \titlehead{titlehead}
 \subject{Dokumentation}
 \title{Streaming-Setup in der Johanneskirche Bühl}
-\subtitle{Version 0.1}
-\author{Simon Ziegler}
-\date{Stand 15. März 2022}
+\subtitle{Version \vhCurrentVersion}
+\author{\vhListAllAuthors}
+\date{Stand \vhCurrentDate}
 \publishers{installiert von Jonas Borho \& Simon Ziegler}
 
 \newcommand{\rarrow}{$\rightarrow$ }
@@ -86,6 +88,11 @@
 	\maketitle
 
 	\newpage
+
+	\begin{versionhistory}
+		\vhEntry{0.1}{2022-03-24}{Simon Ziegler}{erster Entwurf}
+		\vhEntry{0.2}{2022-04-01}{Simon Ziegler}{Kapitel: Kabel, Abschnitt: Tontechnik}
+	\end{versionhistory}
 
 	\tableofcontents
 	\newpage
