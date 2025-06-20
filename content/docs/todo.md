@@ -11,6 +11,9 @@ Dies ist eine Übersicht über die Seiten und Themen, an denen noch gearbeitet w
 - Software
 - Netzwerk
 - JohnCG
+- Dokumentation
+- Thumbnail-Scheduler
+- Golunteer
 
 ## Unvollständig
 
