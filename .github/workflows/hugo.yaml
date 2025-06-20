@@ -42,7 +42,7 @@ jobs:
         run: |
           hugo \
             --minify \
-            --cleanDestinationDirectory
+            --cleanDestinationDir
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
