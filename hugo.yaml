@@ -1,4 +1,4 @@
-baseURL: https://example.org/
+baseURL: https://johannes-dokumentation.z1glr.de
 title: Johanneskirche Bühl - Technik
 defaultContentLanguage: de
 
@@ -39,6 +39,6 @@ menu:
 params:
   editURL:
     enable: true
-    base: "https://github.com/johannesbuehl/dokumentation/edit/main"
+    base: "https://github.com/johannesbuehl/dokumentation/edit/main/content"
   footer:
     displayCopyRight: true
