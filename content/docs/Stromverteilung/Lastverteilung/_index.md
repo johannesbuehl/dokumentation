@@ -1,7 +1,7 @@
 ---
 title: Lastverteilung
 weight: 50
-draft: true
+draft: false
 ---
 
 Im Medienverteiler wird die Last auf die beiden Zuleitungen verteilt.
@@ -15,10 +15,6 @@ Hier sind die Geräte angeschlossen, welche bei einem Stromausfall entweder lang
 ### Lautsprechercontroller Allen & Heath AHM32
 
 Lange Hochfahrzeiten, beim An- und Ausschalten kann ein Knacken auf den Ausgängen (und somit den Lautsprechern) auftreten.
-
-### Netzwerkswitch Cisco SG300-28pp
-
-Lange Hochfahrzeiten: YouTube-Livestreams werden nach einer Minute ohne Datenverbindung automatisch beendet
 
 ### Mischpult Soundcraft Si Impact
 
@@ -53,3 +49,18 @@ Bei lauteren Veranstaltungen, vor allem im Bassbereich, (z. B. Konzerte, Jugendg
 ## LED-Stufenlinsen Eurolite THA-100F MK2
 
 Ebenso wie die Crown-Endstufen haben diese Lampen durch ihre Schaltnetzteile einen hohen Einschaltstrom, welcher mitunter flinke Leitungsschutzschalter auslösen kann.
+
+### Netzwerkswitch Cisco SG300-28pp
+
+> [!NOTE]
+> Derzeitig ist der Switch noch auf der 2. Zuleitung angeschlossen.
+> Aufgrund der unten genannten Gründe wird dieser aber zeitnah auf die 1. Zuleitung umgeklemmt.
+
+Lange Hochfahrzeiten: YouTube-Livestreams werden nach einer Minute ohne Datenverbindung automatisch beendet
+
+### Akku-Ladegeräte
+
+> [!NOTE]
+> Derzeitig sind die Ladegeräte noch auf der 2. Zuleitung angeschlossen.
+> Um die Stromverteilung im Medienverteiler übersichtlich zu halten, werden diese zukünftig auf der 1. Zuleitung angeschlossen sein.
+> (Zusammen mit dem Netzwerkswitch, welcher auf der 1. Zuleitung angeschlossen werden sollte)
