@@ -40,5 +40,15 @@ params:
   editURL:
     enable: true
     base: "https://github.com/johannesbuehl/dokumentation/edit/main/content"
+
   footer:
     displayCopyRight: true
+  displayUpdateDate: true
+
+  blog:
+    list:
+      displayTags: true
+      sortBy: date
+      sortOrder: desc
+    article:
+      displayPagination: true
