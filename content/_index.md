@@ -1,7 +1,7 @@
 ---
 title: "Technik der Evangelischen Kirchengemeinde Bühl"
 date: "2025-06-19T23:51:17+02:00"
-draft: true
+draft: false
 toc: false
 ---
 
