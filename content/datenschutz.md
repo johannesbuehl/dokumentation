@@ -2,6 +2,7 @@
 title: Datenschutzerklärung
 date: "2025-06-20T11:35:53+02:00"
 draft: false
+toc: false
 ---
 
 **Simon Ziegler**  
