@@ -1,6 +1,6 @@
 ---
 title: Lastverteilung
-weight: 50
+weight: 20
 draft: false
 ---
 

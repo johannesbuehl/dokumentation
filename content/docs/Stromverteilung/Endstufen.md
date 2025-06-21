@@ -1,6 +1,6 @@
 ---
 title: Endstufen
-weight: 50
+weight: 30
 draft: false
 math: true
 ---
