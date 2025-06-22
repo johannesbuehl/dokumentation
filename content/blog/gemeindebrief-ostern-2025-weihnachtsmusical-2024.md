@@ -16,7 +16,7 @@ _Im [aktuellen Gemeindebrief (Ostern 2025)](https://evkirchebuehl.de/wp-content/
 <!--more-->
 
 {{< cards cols="1" >}}
-{{< card title="Das Technikteam der Weihnachtsgottesdienste" subtitle="Olivia, Jonathan, Sophie, Simon und Mark (v. l. n. r.)" image="images/gemeindebrief-ostern-2025-weihnachtsmusical-2024/teambild.jpg" subtitle="Olivia, Jonathan, Sophie, Simon und Mark (v. l. n. r.)" method="Resize" options="1000x" >}}
+{{< card title="Das Technikteam der Weihnachtsgottesdienste" subtitle="Olivia, Jonathan, Sophie, Simon und Mark (v. l. n. r.)" image="images/gemeindebrief-ostern-2025-weihnachtsmusical-2024/teambild.jpg" method="Resize" options="1000x" >}}
 {{< /cards >}}
 
 In einem normalen Gottesdienst sind wir zu zweit an der Technik: Ton und Video.
